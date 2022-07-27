@@ -1,14 +1,26 @@
-//Desafio 1 = consiste en contestar una pregunta hasta que sea correcta
+//actividad uno 
+let nombre = "homero"
+let apellido = "sipmsons"
+let edad = "39"
 
-let repetir = true
+//actividad 2
+const ciudad1 = "berlin"
+const ciudad2 = "roma"
+const ciudad3 = "madrid"
+const ciudad4 = "barcelona"
+const ciudad5 = "londres"
 
-while(repetir) {
+//actividad 3
+let nombre1 = "bart sipmson"
+let direccion = "calle123"
+let pais = "alemania"
+carnet = nombre1 +direccion +pais
 
-    let pregunta1 = prompt("¿Capital de España?").toLowerCase()
-    if(pregunta1 == "madrid") {
-        alert("¡Correcto!")
-        repetir = false
-    }else{
-        console.log("Incorrecto, vuelva intentar.")
-    }
-}
+//actividad 5
+let nombre2 = prompt("ingrese un nombre")
+let nombre3 = prompt("ingrese un nombre")
+let nombre4 = prompt("ingrese un nombre")
+let nombre5 = prompt("ingrese un nombre")
+let nombre6 = prompt("ingrese un nombre")
+let nombres = nombre2 + nombre3 + nombre4 + nombre5 + nombre6
+alert(nombres)
