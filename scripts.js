@@ -1,26 +1,63 @@
-//actividad uno 
-let nombre = "homero"
-let apellido = "sipmsons"
-let edad = "39"
+function preguntas( pregunta1, pregunta2, pregunta3, pregunta4, pregunta5){
 
-//actividad 2
-const ciudad1 = "berlin"
-const ciudad2 = "roma"
-const ciudad3 = "madrid"
-const ciudad4 = "barcelona"
-const ciudad5 = "londres"
+    alert("Responde las siguientes preguntas :")
 
-//actividad 3
-let nombre1 = "bart sipmson"
-let direccion = "calle123"
-let pais = "alemania"
-carnet = nombre1 +direccion +pais
+    pregunta1 = prompt("¿Capital de España?").toLowerCase()
+    if (pregunta1 == "madrid"){
+        num1 = 1
+    alert("correcto")
+    }
+    else{
+        num1 = 0;
+    alert("incorrecto")
+    }
 
-//actividad 5
-let nombre2 = prompt("ingrese un nombre")
-let nombre3 = prompt("ingrese un nombre")
-let nombre4 = prompt("ingrese un nombre")
-let nombre5 = prompt("ingrese un nombre")
-let nombre6 = prompt("ingrese un nombre")
-let nombres = nombre2 + nombre3 + nombre4 + nombre5 + nombre6
-alert(nombres)
+    pregunta2 = prompt("¿Capital de Japón?").toLowerCase()
+    if (pregunta2 == "tokio"){
+        num2 = 1;
+    alert("correcto")
+    }
+    else{
+        num2 = 0;
+    alert("incorrecto")
+    }
+
+    pregunta3 = prompt("¿Capital de Italia?").toLowerCase()
+    if (pregunta3 == "roma"){
+        num3 = 1;
+    alert("correcto")
+    }
+    else{
+        num3 = 0;
+    alert("incorrecto")
+    }
+
+    pregunta4 = prompt("¿Capital de Brasil?").toLowerCase()
+    if (pregunta4 == "brasilia"){
+        num4 = 1;
+    alert("correcto")
+    }
+    else{
+        num4 = 0;
+    alert("incorrecto")
+    }
+
+    pregunta5 = prompt("¿Capital de Uruguay?").toLowerCase()
+    if (pregunta5 == "montevideo"){
+        num5 = 1;
+    alert("correcto")
+    }
+    else{
+        num5 = 0;
+    alert("incorrecto")
+    }
+
+    
+    newPreguntas()
+    function newPreguntas() {
+        puntos = num1 + num2 + num3 + num4 + num5;
+        alert(`Puntos obtenidos : ${puntos}`)
+    }
+}
+
+preguntas()
