@@ -1,63 +1,25 @@
-function preguntas( pregunta1, pregunta2, pregunta3, pregunta4, pregunta5){
+let nombre = prompt("Ingrese su nombre");
+alert(`Bienvenido ${nombre}`)
 
-    alert("Responde las siguientes preguntas :")
-
-    pregunta1 = prompt("¿Capital de España?").toLowerCase()
-    if (pregunta1 == "madrid"){
-        num1 = 1
-    alert("correcto")
-    }
-    else{
-        num1 = 0;
-    alert("incorrecto")
-    }
-
-    pregunta2 = prompt("¿Capital de Japón?").toLowerCase()
-    if (pregunta2 == "tokio"){
-        num2 = 1;
-    alert("correcto")
-    }
-    else{
-        num2 = 0;
-    alert("incorrecto")
-    }
-
-    pregunta3 = prompt("¿Capital de Italia?").toLowerCase()
-    if (pregunta3 == "roma"){
-        num3 = 1;
-    alert("correcto")
-    }
-    else{
-        num3 = 0;
-    alert("incorrecto")
-    }
-
-    pregunta4 = prompt("¿Capital de Brasil?").toLowerCase()
-    if (pregunta4 == "brasilia"){
-        num4 = 1;
-    alert("correcto")
-    }
-    else{
-        num4 = 0;
-    alert("incorrecto")
-    }
-
-    pregunta5 = prompt("¿Capital de Uruguay?").toLowerCase()
-    if (pregunta5 == "montevideo"){
-        num5 = 1;
-    alert("correcto")
-    }
-    else{
-        num5 = 0;
-    alert("incorrecto")
-    }
-
-    
-    newPreguntas()
-    function newPreguntas() {
-        puntos = num1 + num2 + num3 + num4 + num5;
-        alert(`Puntos obtenidos : ${puntos}`)
+class Computadora{
+    constructor(precio, procesador, ram, almacenamiento, os){
+        this.procesador = procesador;
+        this.ram = ram;
+        this.almacenamiento = almacenamiento;
+        this.os = os;
+        this.precio = precio;
     }
 }
 
-preguntas()
+const computadora1 = new Computadora("$15000", "Intel dual core 2.40ghz", "2gb", "240gb hdd", "Windows 7");
+const computadora2 = new Computadora("$15000", "AMD athlon 3.0ghz", "4gb", "500gb hdd", "Windows 8");
+const computadora3 = new Computadora("$15000", "Intel dual core 2.40ghz", "2gb", "240gb hdd", "Windows 7");
+const computadora4 = new Computadora("$15000", "Intel dual core 2.40ghz", "2gb", "240gb hdd", "Windows 7");
+const computadora5 = new Computadora("$15000", "Intel dual core 2.40ghz", "2gb", "240gb hdd", "Windows 7");
+
+
+alert("vea nuestras compus")
+const computadoras = [computadora1, computadora2, computadora3, computadora4, computadora5]
+console.table(computadoras)
+alert("asd")
+
