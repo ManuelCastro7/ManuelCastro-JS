@@ -1,6 +1,6 @@
 //Primera entrega del proyecto final
 
-/*let repetir = true
+let repetir = true
 
 let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
 
@@ -15,7 +15,7 @@ while (repetir) {
         alert("Sos menor de edad.")
     }
 }
-*/
+
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
         this.procesador = procesador;
