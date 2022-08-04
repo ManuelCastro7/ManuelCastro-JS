@@ -1,6 +1,6 @@
 //Primera entrega del proyecto final
 
-let repetir = true
+/*let repetir = true
 
 let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
 
@@ -15,7 +15,7 @@ while (repetir) {
         alert("Sos menor de edad.")
     }
 }
-
+*/
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
         this.procesador = procesador;
@@ -42,68 +42,68 @@ switch (seleccion) {
     case "1":
         console.log(computadoras.find(compusArray => compusArray.precio == 15000))
 
-        function multiplicar(){
+        function multiplicar1(){
             let num1 = 15000
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar1()
         break;
     case "2":
         console.log(computadoras.find(compusArray => compusArray.precio == 20000))
 
-        function multiplicar(){
+        function multiplicar2(){
             let num1 = 20000
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar2()
         break;
     case "3":
         console.log(computadoras.find(compusArray => compusArray.precio == 28500))
 
-        function multiplicar(){
+        function multiplicar3(){
             let num1 = 28500
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar3()
         break;
     case "4":
         console.log(computadoras.find(compusArray => compusArray.precio == 35500))
 
-        function multiplicar(){
+        function multiplicar4(){
             let num1 = 35500
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar4()
         break;
     case "5":
         console.log(computadoras.find(compusArray => compusArray.precio == 42500))
 
-        function multiplicar(){
+        function multiplicar5(){
             let num1 = 42500
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar5()
         break;
     case "6":
         console.log(computadoras.find(compusArray => compusArray.precio == 55000))
 
-        function multiplicar(){
+        function multiplicar6(){
             let num1 = 55000
             let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
             let resultado = num1 * num2;
             alert(`El costo total es : $${resultado}`)
         }
-        multiplicar()
+        multiplicar6()
         break;
     default:
         break;
