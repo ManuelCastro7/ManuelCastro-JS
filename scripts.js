@@ -11,12 +11,10 @@ while (repetir) {
         alert(`Bienvenido ${nombre}, a continuacion, vea nuestras compus.`)
         break
     }
-    else if(edad <17){
+    else if(edad <=17){
         alert("Sos menor de edad.")
     }
 }
-
-
 
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
@@ -38,44 +36,74 @@ const computadora6 = new Computadora("55000", "AMD Ryzen5 4.2ghz", "16gb ddr4", 
 
 const computadoras = [computadora1, computadora2, computadora3, computadora4, computadora5, computadora6]
 
-//a cada precio le sumo el IVA
-computadoras.forEach(compusArray => {
-    compusArray.precio *= 1.21
-})
-console.table(computadoras)
-
-let seleccion = prompt("Selecciona una marca para comprar : \n 1 - INTEL \n 2 - AMD ");
+let seleccion = prompt("Selecciona un modelo para comprar : \n\n 1 - Intel core2 \n 2 - Intel i3 \n 3 - Intel i5 \n 4 - AMD Athlon \n 5 - AMD Ryzen3 \n 6 - AMD Ryzen5");
 
 switch (seleccion) {
     case "1":
-        let valor = prompt("Selecciona un modelo : \n 1 - Intel core2 \n 2 - Intel i3 \n 3 - Intel i5");
-        if(valor == "1"){
-            alert("Compra finalizada con exito")
+        console.log(computadoras.find(compusArray => compusArray.precio == 15000))
+
+        function multiplicar(){
+            let num1 = 15000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
         }
-         else if(valor == "2"){
-            alert("Compra finalizada con exito")
-        }
-        else if(valor == "3"){
-            alert("Compra finalizada con exito")
-        }
-        else{
-            alert("error")
-        }
+        multiplicar()
         break;
     case "2":
-        let valor1 = prompt("Selecciona un modelo : \n 1 - AMD Athlon \n 2 - AMD Ryzen3 \n 3 - AMD Ryzen5");
-        if(valor1 == "1"){
-            alert("Compra finalizada con exito")
+        console.log(computadoras.find(compusArray => compusArray.precio == 20000))
+
+        function multiplicar(){
+            let num1 = 20000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
         }
-         else if(valor1 == "2"){
-            alert("Compra finalizada con exito")
+        multiplicar()
+        break;
+    case "3":
+        console.log(computadoras.find(compusArray => compusArray.precio == 28500))
+
+        function multiplicar(){
+            let num1 = 28500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
         }
-        else if(valor1 == "3"){
-            alert("Compra finalizada con exito")
+        multiplicar()
+        break;
+    case "4":
+        console.log(computadoras.find(compusArray => compusArray.precio == 35500))
+
+        function multiplicar(){
+            let num1 = 35500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
         }
-        else{
-            alert("error")
+        multiplicar()
+        break;
+    case "5":
+        console.log(computadoras.find(compusArray => compusArray.precio == 42500))
+
+        function multiplicar(){
+            let num1 = 42500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
         }
+        multiplicar()
+        break;
+    case "6":
+        console.log(computadoras.find(compusArray => compusArray.precio == 55000))
+
+        function multiplicar(){
+            let num1 = 55000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar()
         break;
     default:
         break;
