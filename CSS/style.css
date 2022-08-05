@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.cards{
+    background-color: cornflowerblue;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 100px;
+    width: 16rem;
+}
