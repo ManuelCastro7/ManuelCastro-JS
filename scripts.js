@@ -1,4 +1,4 @@
-//Primera entrega del proyecto final
+//Desafio 5
 
 let repetir = true
 
@@ -8,13 +8,15 @@ while (repetir) {
     let edad = parseFloat(prompt("Ingrese su edad."))
     
     if (edad >= 18){
-        alert(`Bienvenido ${nombre}, a continuacion, vea nuestras compus.`)
         break
     }
     else if(edad <=17){
         alert("Sos menor de edad.")
     }
 }
+
+ const usuario = document.getElementById("usuario")
+ usuario.innerText = `Hola ${nombre}, aqui tiene las mejores computadoras para vos`
 
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
@@ -36,75 +38,16 @@ const computadora6 = new Computadora("55000", "AMD Ryzen5 4.2ghz", "16gb ddr4", 
 
 const computadoras = [computadora1, computadora2, computadora3, computadora4, computadora5, computadora6]
 
-let seleccion = prompt("Selecciona un modelo para comprar : \n\n 1 - Intel core2 \n 2 - Intel i3 \n 3 - Intel i5 \n 4 - AMD Athlon \n 5 - AMD Ryzen3 \n 6 - AMD Ryzen5");
+const divProductos = document.getElementById("divProductos")
 
-switch (seleccion) {
-    case "1":
-        console.log(computadoras.find(compusArray => compusArray.precio == 15000))
-
-        function multiplicar1(){
-            let num1 = 15000
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar1()
-        break;
-    case "2":
-        console.log(computadoras.find(compusArray => compusArray.precio == 20000))
-
-        function multiplicar2(){
-            let num1 = 20000
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar2()
-        break;
-    case "3":
-        console.log(computadoras.find(compusArray => compusArray.precio == 28500))
-
-        function multiplicar3(){
-            let num1 = 28500
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar3()
-        break;
-    case "4":
-        console.log(computadoras.find(compusArray => compusArray.precio == 35500))
-
-        function multiplicar4(){
-            let num1 = 35500
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar4()
-        break;
-    case "5":
-        console.log(computadoras.find(compusArray => compusArray.precio == 42500))
-
-        function multiplicar5(){
-            let num1 = 42500
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar5()
-        break;
-    case "6":
-        console.log(computadoras.find(compusArray => compusArray.precio == 55000))
-
-        function multiplicar6(){
-            let num1 = 55000
-            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
-            let resultado = num1 * num2;
-            alert(`El costo total es : $${resultado}`)
-        }
-        multiplicar6()
-        break;
-    default:
-        break;
-}
+computadoras.forEach(producto => {
+    divProductos.innerHTML += `
+    <div class="cards">
+        <h3 class="card">Procesador: ${producto.procesador}</h3>
+        <h3 class="card">Ram: ${producto.ram}</h3>
+        <h3 class="card">Almacenamiento: ${producto.almacenamiento}</h3>
+        <h3 class="card">OS: ${producto.os}</h3>
+        <h3 class="card">Precio: ${producto.precio}</h3>
+    </div>
+    `
+});
