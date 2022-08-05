@@ -1,9 +1,7 @@
 //Primera entrega del proyecto final
 
 let repetir = true
-
 let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
-
 while (repetir) {
     let edad = parseFloat(prompt("Ingrese su edad."))
     
