@@ -1,23 +1,6 @@
-//Desafio 5
+//Desafio 6
 
-/*let repetir = true
 
-let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
-
-while (repetir) {
-    let edad = parseFloat(prompt("Ingrese su edad."))
-    
-    if (edad >= 18){
-        break
-    }
-    else if(edad <=17){
-        alert("Sos menor de edad.")
-    }
-}
-
- const usuario = document.getElementById("usuario")
- usuario.innerText = `Hola ${nombre}, aqui tiene las mejores computadoras para vos`
-*/
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
         this.procesador = procesador;
@@ -48,11 +31,31 @@ computadoras.forEach(producto => {
         <h3 class="card">Almacenamiento: ${producto.almacenamiento}</h3>
         <h3 class="card">OS: ${producto.os}</h3>
         <h3 class="card">Precio: ${producto.precio}</h3>
-        <button class="comprar" id="boton1">Comprar</button>
+        <button id="boton1">COMPRAR</button>
     </div>
     `
 })
 
 boton1.addEventListener('click', () => {
-    alert("¿Estas seguro?")
+    alert("Compra finalizada")
+    
 })
+
+let repetir = true
+let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
+const usuario = document.getElementById("usuario")
+usuario.innerText = `Hola ${nombre}, aqui tiene las mejores computadoras para vos`
+
+
+//Formulario extraido de Developer Mozilla
+const form = document.querySelector('form');
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const para = document.querySelector('p');
+
+form.addEventListener('submit', (e) => {
+  if (fname.value === '' || lname.value === '') {
+    e.preventDefault();
+    para.textContent = 'Complete los dos campos';
+  }
+});
