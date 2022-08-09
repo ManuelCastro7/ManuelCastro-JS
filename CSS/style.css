@@ -11,11 +11,27 @@ main{
     margin: 50px;
     border-radius: 25px;
 }
-
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+}
 h1{
     padding-top: 50px;
     padding-bottom: 50px;
     color: black;
+    letter-spacing: 5px;
+    font-size: 75px;
+}
+h2{
+    margin: 5px;
+}
+h3{
+    margin: 5px;
+}
+.compra{
+    position: relative;
+    left: -10px;
+    bottom: -120px;
 }
 .contenedor{
     display: grid;
@@ -23,13 +39,20 @@ h1{
     justify-items: center;
 }
 .cards{
-    background-color: rgb(250, 50, 100);
+    background-color: rgb(150, 0, 50);
     border-radius: 25px;
     box-shadow: 10px 10px 10px black;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
+    margin-bottom: 75px;
+    padding-bottom: 20px;
+    height: fit-content;
     width: 16rem;
     color: white;
+}
+.cards img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: -20PX;
 }
 form{
     display: flex;
@@ -95,3 +118,5 @@ button {
    button:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
    }
+
+
