@@ -5,15 +5,15 @@ function add(producto, precio) {
     console.log(producto, precio);
     products.push(producto);
     total = total + precio;
-    document.getElementById("checkout").innerHTML = `Pagar $${total}`
+    document.getElementById("checkout").innerHTML = `Total $${total}`
 }
 
 function pay() {
-    window.alert(products.join(", \n"));
+    window.alert(products.join("\n"));
 }
 
 //Desafio 6
-
+/*
 class Computadora{
     constructor(precio, procesador, ram, almacenamiento, os){
         this.procesador = procesador;
@@ -32,30 +32,34 @@ const computadora4 = new Computadora("35500", "Intel core i5 4.1ghz", "8gb ddr3"
 const computadora5 = new Computadora("42500", "AMD Ryzen3 4.0ghz", "8gb ddr4", "500gb ssd", "Windows 10");
 const computadora6 = new Computadora("55000", "AMD Ryzen5 4.2ghz", "16gb ddr4", "500gb sdd", "Windows 11");
 const computadoras = [computadora1, computadora2, computadora3, computadora4, computadora5, computadora6]
+*/
 
-boton1.addEventListener('click', () => {
-    window.alert(computadora1)
-})
-boton2.addEventListener('click', () => {
-    console.table(computadora2)
-})
-boton3.addEventListener('click', () => {
-    console.table(computadora3)
-})
-boton4.addEventListener('click', () => {
-    console.table(computadora4)
-})
-boton5.addEventListener('click', () => {
-    console.table(computadora5)
-})
-boton6.addEventListener('click', () => {
-    console.table(computadora6)
-})
 
-let repetir = true
-let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
-const usuario = document.getElementById("usuario")
-usuario.innerText = `Hola ${nombre}, aqui tiene las mejores computadoras para vos`
+const divProductos = document.getElementById("compra")
+divProductos.innerHTML += `
+    <div>
+        <button id="checkout" class="button" onclick="pay()">Total a pagar</button>
+    </div>
+    `
+
+const boton1 = document.getElementById("boton1")
+boton1.onclick = () => add('Compu1 $', 15000)
+
+const boton2 = document.getElementById("boton2")
+boton2.onclick = () => add('Compu2 $', 20000)
+
+const boton3 = document.getElementById("boton3")
+boton3.onclick = () => add('Compu3 $', 28500)
+
+const boton4 = document.getElementById("boton4")
+boton4.onclick = () => add('Compu4 $', 35500)
+
+const boton5 = document.getElementById("boton5")
+boton5.onclick = () => add('Compu5 $', 42500)
+
+const boton6 = document.getElementById("boton6")
+boton6.onclick = () => add('Compu6 $', 55000)
+
 
 
 //Formulario extraido de Developer Mozilla
