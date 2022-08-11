@@ -6,11 +6,6 @@ body{
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-main{
-    background-color: white;
-    margin: 50px;
-    border-radius: 25px;
-}
 .encabezado{
     display: flex;
     justify-content: space-around;
@@ -28,10 +23,19 @@ h2{
 h3{
     margin: 5px;
 }
+#dark{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    position: absolute;
+    right: 55px;
+    border: 10px solid #c01074;
+}
 .compra{
     position: relative;
-    left: -10px;
-    bottom: -120px;
+    left: 150px;
+    bottom: -130px;
 }
 .contenedor{
     display: grid;
@@ -65,7 +69,7 @@ margin-left: 10px;
 
 
 /* Boton de comprar */
-button {
+.boton {
     text-decoration: none;
     position: absolute;
     border: none;
@@ -82,7 +86,7 @@ button {
     z-index: 1;
    }
    
-   button:hover {
+   .boton:hover {
     animation: ani 8s linear infinite;
     border: none;
    }
@@ -97,7 +101,7 @@ button {
     }
    }
    
-   button:before {
+   .boton:before {
     content: '';
     position: absolute;
     top: -5px;
@@ -111,12 +115,30 @@ button {
     transition: 1s;
    }
    
-   button:hover::before {
+   .boton:hover::before {
     filter: blur(20px);
    }
    
-   button:active {
+   .boton:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
    }
 
+   main{
+    background-color: white;
+    margin: 50px;
+    border-radius: 25px;
+}
 
+.darkmode{
+    background-color: black;
+}
+.darkmode h1{
+    color: white;
+}
+.darkmode .cards{
+    box-shadow: 10px 10px 10px rosybrown;
+}
+.darkmode #dark{
+    background-color: white;
+    color: black;
+}
