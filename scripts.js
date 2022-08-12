@@ -4,7 +4,7 @@ let products = [];
 let total = 0;
 
 function add(producto, precio) {
-    console.log(producto, precio);
+    console.log(producto);
     products.push(producto);
     total = total + precio;
     document.getElementById("checkout").innerHTML = `Total $${total}`
@@ -64,7 +64,7 @@ function store(value){
 }
 
 
-//Formulario extraido de Developer Mozilla
+//Pequeño formulario extraido de Developer Mozilla
 const form = document.querySelector('form');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
