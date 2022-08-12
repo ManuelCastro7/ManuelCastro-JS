@@ -1,3 +1,5 @@
+//Segunda entrega del proyecto final
+
 let products = [];
 let total = 0;
 
