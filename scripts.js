@@ -1,6 +1,12 @@
 let products = [];
 let total = 0;
 
+<<<<<<< HEAD
+let repetir = true
+let nombre = prompt("Ingrese su nombre.").toLowerCase(); 
+while (repetir) {
+    let edad = parseFloat(prompt("Ingrese su edad."))
+=======
 function add(producto, precio) {
     console.log(producto, precio);
     products.push(producto);
@@ -48,6 +54,7 @@ dark.addEventListener("click", e =>{
 });
 function cargar(){
     const darkmode = localStorage.getItem("darkmode")
+
     
     if(!darkmode){
         store("false")
@@ -68,9 +75,83 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const para = document.querySelector('p');
 
+let seleccion = prompt("Selecciona un modelo para comprar : \n\n 1 - Intel core2 \n 2 - Intel i3 \n 3 - Intel i5 \n 4 - AMD Athlon \n 5 - AMD Ryzen3 \n 6 - AMD Ryzen5");
+
+switch (seleccion) {
+    case "1":
+        console.log(computadoras.find(compusArray => compusArray.precio == 15000))
+
+        function multiplicar1(){
+            let num1 = 15000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar1()
+        break;
+    case "2":
+        console.log(computadoras.find(compusArray => compusArray.precio == 20000))
+
+        function multiplicar2(){
+            let num1 = 20000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar2()
+        break;
+    case "3":
+        console.log(computadoras.find(compusArray => compusArray.precio == 28500))
+
+        function multiplicar3(){
+            let num1 = 28500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar3()
+        break;
+    case "4":
+        console.log(computadoras.find(compusArray => compusArray.precio == 35500))
+
+        function multiplicar4(){
+            let num1 = 35500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar4()
+        break;
+    case "5":
+        console.log(computadoras.find(compusArray => compusArray.precio == 42500))
+
+        function multiplicar5(){
+            let num1 = 42500
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar5()
+        break;
+    case "6":
+        console.log(computadoras.find(compusArray => compusArray.precio == 55000))
+
+        function multiplicar6(){
+            let num1 = 55000
+            let num2 = parseFloat(prompt("¿Cantidad para llevar?"));
+            let resultado = num1 * num2;
+            alert(`El costo total es : $${resultado}`)
+        }
+        multiplicar6()
+        break;
+    default:
+        break;
+}
+=======
 form.addEventListener('submit', (e) => {
   if (fname.value === '' || lname.value === '') {
     e.preventDefault();
     para.textContent = 'Complete los dos campos';
   }
 });
+>>>>>>> desafio2
