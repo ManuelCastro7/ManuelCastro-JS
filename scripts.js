@@ -1,4 +1,4 @@
-//Desafio 8
+//Desafio 8 pequeño cuestionario
 
 alert("Responde las siguientes preguntas :")
 
@@ -24,3 +24,11 @@ function puntaje() {
     document.write(`El porcentaje de aciertos es del %${puntaje}`)
 }
 puntaje()
+
+const usuario = {
+    nombre : prompt("Ingrese su nombre"),
+    edad : prompt("Ingrese su edad")
+}
+
+const ingreso = usuario.edad >= 18 && usuario
+console.log(ingreso)
