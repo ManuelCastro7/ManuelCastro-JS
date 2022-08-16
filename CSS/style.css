@@ -43,9 +43,9 @@ h3{
     justify-items: center;
 }
 .cards{
-    background-color: rgb(150, 0, 50);
+    background-color: red;
     border-radius: 25px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px 5px black;
     margin-bottom: 75px;
     padding-bottom: 20px;
     height: fit-content;
@@ -137,7 +137,7 @@ margin-left: 10px;
     color: white;
 }
 .darkmode .cards{
-    box-shadow: 10px 10px 10px rosybrown;
+    box-shadow: 10px 10px 10px rgb(206, 78, 78);
 }
 .darkmode #dark{
     background-color: white;

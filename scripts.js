@@ -21,22 +21,11 @@ divProductos.innerHTML += `
     </div>
     `
 
-const boton1 = document.getElementById("boton1")
 boton1.onclick = () => add('Compu1 $15000', 15000)
-
-const boton2 = document.getElementById("boton2")
 boton2.onclick = () => add('Compu2 $20000', 20000)
-
-const boton3 = document.getElementById("boton3")
 boton3.onclick = () => add('Compu3 $28500', 28500)
-
-const boton4 = document.getElementById("boton4")
 boton4.onclick = () => add('Compu4 $35500', 35500)
-
-const boton5 = document.getElementById("boton5")
 boton5.onclick = () => add('Compu5 $42500', 42500)
-
-const boton6 = document.getElementById("boton6")
 boton6.onclick = () => add('Compu6 $55000', 55000)
 
 
