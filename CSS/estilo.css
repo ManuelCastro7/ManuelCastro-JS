@@ -1,0 +1,8 @@
+.borde{
+    text-align: center;
+    background: rgb(250,0,0);
+    background: linear-gradient(160deg, rgba(250,0,0,1) 0%, rgba(250,0,100,1) 25%, rgba(150,0,250,1) 75%, rgba(0,0,250,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
