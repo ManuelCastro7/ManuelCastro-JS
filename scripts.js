@@ -3,16 +3,19 @@
 let products = [];
 let total = 0;
 
+
 function add(producto, precio) {
     console.log(producto);
     products.push(producto);
     total = total + precio;
     document.getElementById("checkout").innerHTML = `Total $${total}`
+    localStorage.setItem("total",JSON.stringify([]))
 }
 
 function pay() {
     window.alert(products.join("\n"));
 }
+
 
 const divProductos = document.getElementById("compra")
 divProductos.innerHTML += `
