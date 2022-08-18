@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    margin: 50px;
+    background: rgb(0,150,255);
+    background: linear-gradient(120deg, rgba(0,225,255,1) 0%, rgba(155,0,255,1) 50%, rgba(255,0,0,1) 100%);
+}
+.contenido{
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 50px;
+    margin: 0px
+}
+.bob{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h1{
+    letter-spacing: 10px;
+    text-shadow: rgb(0,150,255) 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    color: black;
+    font-size: 75px;
+}
+h6{
+    color: red;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form1{
+margin-left: 10px;
+}
