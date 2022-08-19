@@ -24,21 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 4,
-      nombre: "Ram 2gb",
+      nombre: "2gb",
       caracteriticas: "ddr4 1600mhz",
       precio: 4000,
       imagen: "/img/ram.jpg"
     },
     {
       id: 5,
-      nombre: "Ram 4gb",
+      nombre: "4gb",
       caracteriticas: "ddr4 2600mhz",
       precio: 6000,
       imagen: "/img/ram.jpg"
     },
     {
       id: 6,
-      nombre: "Ram 8gb",
+      nombre: "8gb",
       caracteriticas: "ddr4 3600mhz",
       precio: 8000,
       imagen: "/img/ram.jpg"
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
       miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`
 
-      // Boton de borrar
+      // Boton de eliminar producto
       const miBoton = document.createElement('button');
       miBoton.classList.add('btn', 'btn-danger', 'mx-5');
       miBoton.textContent = 'X';
