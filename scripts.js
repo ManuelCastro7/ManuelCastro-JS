@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     baseDeDatos.forEach((info) => {
       // Estructura
       const miNodo = document.createElement('div');
-      miNodo.classList.add('card', 'col-sm-4');
+      miNodo.classList.add('card', 'col-sm-3');
       // Body
       const miNodoCardBody = document.createElement('div');
       miNodoCardBody.classList.add('card-body');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miNodoPrecio.textContent = `${divisa}${info.precio}`;
       // Boton 
       const miNodoBoton = document.createElement('button');
-      miNodoBoton.classList.add('btn', 'btn-primary');
+      miNodoBoton.classList.add('boton');
       miNodoBoton.textContent = 'Comprar';
       miNodoBoton.setAttribute('marcador', info.id);
       miNodoBoton.addEventListener('click', aniadirProductoAlCarrito);
@@ -187,16 +187,15 @@ const para = document.querySelector('h6');
 form.addEventListener('submit', (e) => {
   if (fname.value === '' || lname.value === '') {
     e.preventDefault();
-    para.textContent = 'Complete los dos campos';
+    const boton = document.getElementById("boton")
+    boton.addEventListener("click" , () =>{
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Por favor, llene los dos campos',
+      })
+    });
   }
 });
 
-  const boton = document.getElementById("boton")
-  boton.addEventListener("click" , () =>{
-    Swal.fire(
-      'The Internet?',
-      'That thing is still around?',
-      'question'
-    )
- })
 
