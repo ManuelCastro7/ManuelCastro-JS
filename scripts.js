@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Boton 
       const miNodoBoton = document.createElement('button');
       miNodoBoton.classList.add('boton');
-      miNodoBoton.textContent = 'Comprar';
+      miNodoBoton.textContent = 'Agregar';
       miNodoBoton.setAttribute('marcador', info.id);
       miNodoBoton.addEventListener('click', aniadirProductoAlCarrito);
       // Insertamos
@@ -176,6 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
   renderizarCarrito();
 });
 
+const botonComprar = document.getElementById("botonComprar")
+botonComprar.addEventListener("click" , () => {
+  Swal.fire(
+    '¡Felicidades!',
+    'Compra finalizada.',
+    'success' 
+  )
+})
 
 
 //Formulario extraido de Developer Mozilla
@@ -188,7 +196,7 @@ form.addEventListener('submit', (e) => {
   if (fname.value === '' || lname.value === '') {
     e.preventDefault();
     const boton = document.getElementById("boton")
-    boton.addEventListener("click" , () =>{
+    boton.addEventListener("click" , () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
