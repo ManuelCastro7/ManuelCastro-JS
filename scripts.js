@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miNodoPrecio.textContent = `${divisa}${info.precio}`;
       // Boton 
       const miNodoBoton = document.createElement('button');
-      miNodoBoton.classList.add('boton');
+      miNodoBoton.classList.add('btn', 'btn-primary' );
       miNodoBoton.textContent = 'Agregar';
       miNodoBoton.setAttribute('marcador', info.id);
       miNodoBoton.addEventListener('click', aniadirProductoAlCarrito);
@@ -186,24 +186,7 @@ botonComprar.addEventListener("click" , () => {
 })
 
 
-//Formulario extraido de Developer Mozilla
-const form = document.querySelector('form');
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
-const para = document.querySelector('h6');
 
-form.addEventListener('submit', (e) => {
-  if (fname.value === '' || lname.value === '') {
-    e.preventDefault();
-    const boton = document.getElementById("boton")
-    boton.addEventListener("click" , () => {
-      Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Por favor, llene los dos campos',
-      })
-    });
-  }
-});
+
 
 
