@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miNodoBoton.textContent = 'Agregar';
       miNodoBoton.setAttribute('marcador', info.id);
       miNodoBoton.addEventListener('click', aniadirProductoAlCarrito);
-      // Insertamos
+     
       miNodoCardBody.appendChild(miNodoImagen);
       miNodoCardBody.appendChild(miNodoTitulo);
       miNodoCardBody.appendChild(miNodoCaracteristica);
