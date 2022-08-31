@@ -1,0 +1,30 @@
+[{
+    "dia": "Lunes",
+    "hora": "9hs-21hs",
+    "vendores": "Romina y  Julian"
+  },
+  {
+    "dia": "Martes",
+    "hora": "9hs-21hs",
+    "vendores": "Romina y  Julian"
+  },
+  {
+    "dia": "Miercoles",
+    "hora": "9hs-21hs",
+    "vendores": "Romina y  Julian"
+  },
+  {
+    "dia": "Jueves",
+    "hora": "9hs-21hs",
+    "vendores": "Veronica y  Alan"
+  },
+  {
+    "dia": "Viernes",
+    "hora": "9hs-21hs",
+    "vendores": "Veronica y  Alan"
+  },
+  {
+    "dia": "Sabado",
+    "hora": "12hs-18hs",
+    "vendores": "Veronica y  Alan"
+  }]

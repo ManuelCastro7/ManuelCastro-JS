@@ -30,3 +30,23 @@ function iniciarMap(){
       map: map
     });
 }
+
+
+
+
+
+fetch('./json/horarios.json')
+.then(response => response.json())
+.then(horarios => {
+  horarios.forEach((horarios) => {
+    divHorarios.innerHTML += `
+    <div class="column">
+      <div class="card-body">
+        <h4 class="card-title">Dia : ${horarios.dia}</h4>
+        <p class="card-text">Vendedores : ${horarios.vendores}</p>
+        <p class="card-text">Horarios : ${horarios.hora}</p>
+      </div>
+    </div>
+    `
+  })
+})
