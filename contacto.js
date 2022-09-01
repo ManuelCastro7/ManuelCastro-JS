@@ -4,6 +4,7 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const para = document.querySelector('h6');
 
+// Tira error en caso de no llenar los dos espacios
 form.addEventListener('submit', (e) => {
   if (fname.value === '' || lname.value === '') {
     e.preventDefault();
@@ -31,10 +32,7 @@ function iniciarMap(){
     });
 }
 
-
-
-
-
+// Dias y horarios
 fetch('./json/horarios.json')
 .then(response => response.json())
 .then(horarios => {

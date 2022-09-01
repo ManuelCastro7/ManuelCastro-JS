@@ -1,4 +1,3 @@
-// Desafio de librerias
 document.addEventListener('DOMContentLoaded', () => {
 
   const baseDeDatos = [{
@@ -101,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderizarCarrito();
     guardarCarritoEnLocalStorage();
   }
-
   function renderizarCarrito() {
     DOMcarrito.textContent = '';
     const carritoSinDuplicados = [...new Set(carrito)];
@@ -109,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const miItem = baseDeDatos.filter((itemBaseDatos) => {
         return itemBaseDatos.id === parseInt(item);
       });
-
       const numeroUnidadesItem = carrito.reduce((total, itemId) => {
         return itemId === item ? total += 1 : total;
       }, 0);
@@ -176,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderizarCarrito();
 });
 
+// Finaliza compra
 const botonComprar = document.getElementById("botonComprar")
 botonComprar.addEventListener("click" , () => {
   Swal.fire(
